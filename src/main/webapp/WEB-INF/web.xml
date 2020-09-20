@@ -5,11 +5,11 @@
          version="3.1">
   <display-name>Archetype Created Web Application</display-name>
   <servlet>
-    <servlet-name>WelcomeServlet</servlet-name>
-    <servlet-class>ch.heigvd.amt.projet1.presentation.WelcomeServlet</servlet-class>
+    <servlet-name>QuestionsServlet</servlet-name>
+    <servlet-class>ch.heigvd.amt.projet1.presentation.QuestionsServlet</servlet-class>
   </servlet>
   <servlet-mapping>
-    <servlet-name>WelcomeServlet</servlet-name>
+    <servlet-name>QuestionsServlet</servlet-name>
     <url-pattern>/questions</url-pattern>
   </servlet-mapping>
 
@@ -23,11 +23,11 @@
   </servlet-mapping>
 
   <servlet>
-    <servlet-name>c</servlet-name>
+    <servlet-name>RegisterServlet</servlet-name>
     <servlet-class>ch.heigvd.amt.projet1.presentation.RegisterServlet</servlet-class>
   </servlet>
   <servlet-mapping>
-    <servlet-name>LoginServlet</servlet-name>
+    <servlet-name>RegisterServlet</servlet-name>
     <url-pattern>/register</url-pattern>
   </servlet-mapping>
 

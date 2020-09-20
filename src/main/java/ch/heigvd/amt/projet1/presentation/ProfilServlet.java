@@ -16,6 +16,6 @@ public class ProfilServlet extends javax.servlet.http.HttpServlet {
 
     protected void doGet(javax.servlet.http.HttpServletRequest request, javax.servlet.http.HttpServletResponse response) throws javax.servlet.ServletException, IOException {
         //request.setAttribute("register", model);
-        //request.getRequestDispatcher("/WEB-INF/views/view.jsp").forward(request, response);
+        request.getRequestDispatcher("/WEB-INF/views/profil.jsp").forward(request, response);
     }
 }
