@@ -10,7 +10,10 @@
             </c:forEach>
         </ul>
     </c:if>
-    <form id ="login-form" action="/login.do" method="post">
+
+    ${login}
+    ${uname}
+    <form id ="login-form" action="login.do" method="post">
     <label for="uname"><b>Username</b></label>
     <input type="text" placeholder="Enter Username" name="uname" required>
 
