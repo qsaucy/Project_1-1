@@ -1,7 +1,6 @@
 package ch.heigvd.amt.projet1.presentation;
 
 import ch.heigvd.amt.projet1.business.TestQuestion;
-import ch.heigvd.amt.projet1.model.Questions;
 
 import javax.servlet.ServletConfig;
 import javax.servlet.ServletException;
@@ -26,7 +25,7 @@ public class QuestionsServlet extends javax.servlet.http.HttpServlet {
     }
 
     protected void doGet(javax.servlet.http.HttpServletRequest request, javax.servlet.http.HttpServletResponse response) throws javax.servlet.ServletException, IOException {
-        List<Questions> model = service.generateQuestions();
+        List<String> model = service.generateQuestions();
         request.setAttribute("questions", model);
         request.getRequestDispatcher("/WEB-INF/views/questions.jsp").forward(request, response);
     }

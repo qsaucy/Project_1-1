@@ -3,16 +3,27 @@
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 <%@include file="fragments/Header.jsp"%>
 <!-- Page Content -->
-<div class="w3-card-4 w3-dark-grey">
+<head>
+    <style>
+        .col-6 {
+            padding: 200px 0;
+        }
+    </style>
+</head>
 
-    <div class="w3-container w3-center">
-        <h3>Friend request</h3>
-        <img src="img_avatar3.png" alt="Avatar" style="width:80%">
-        <h5>John Doe</h5>
+<img alt="logo" src="../../../images/index.jpg"/>
+<div class="row">
+    <div class="col"/> </div>
+<div class="col-6">
+        <div class="w3-card-4 w3-dark-grey">
 
-        <button class="w3-button w3-green">Accept</button>
-        <button class="w3-button w3-red">Decline</button>
+            <div class="w3-container w3-center">
+                <h5>John Doe</h5>
+
+            </div>
+
+        </div>
     </div>
-
+    <div class="col"> </div>
 </div>
 <%@include file="fragments/Footer.jsp"%>

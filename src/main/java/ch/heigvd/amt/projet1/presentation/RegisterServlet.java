@@ -1,12 +1,10 @@
 package ch.heigvd.amt.projet1.presentation;
 
 import ch.heigvd.amt.projet1.business.TestQuestion;
-import ch.heigvd.amt.projet1.model.Questions;
 
 import javax.servlet.ServletConfig;
 import javax.servlet.ServletException;
 import java.io.IOException;
-import java.util.List;
 
 public class RegisterServlet extends javax.servlet.http.HttpServlet {
     private TestQuestion service;
