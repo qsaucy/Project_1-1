@@ -11,7 +11,9 @@ public class Authentification {
         auth.put("pierre","kiroul");
         auth.put("jean","nemar");
     }
-
+    public boolean isExist(String login){
+        return auth.containsKey(login);
+    }
     public boolean isSame(String login, String password) {
         if(!auth.containsKey(login))
         return false;
