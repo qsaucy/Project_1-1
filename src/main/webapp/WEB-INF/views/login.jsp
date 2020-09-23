@@ -1,13 +1,27 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
-<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
-<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
 <%@include file="fragments/Header.jsp"%>
-<!-- Page Content -->
-<div class="container">
-    <div class="row">
-        <div class="col-lg-12 text-center">
-            <h2>Login</h2>
-        </div>
-    </div>
+<c:set var ="pageTitle" value="login stackFlow"/>
+<div id="login">
+    <c:if test="${errors!=null}">
+        <ul>
+            <c:forEach items="${errors}" var="error">
+                <li>Error : ${error}</li>
+            </c:forEach>
+        </ul>
+    </c:if>
+
+    ${login}
+    ${uname}
+    <form id ="login-form" action="login.do" method="post">
+    <label for="uname"><b>Username</b></label>
+    <input type="text" placeholder="Enter Username" name="uname" required>
+
+    <label for="psw"><b>Password</b></label>
+    <input type="password" placeholder="Enter Password" name="psw" required>
+
+    <button type="submit">Login</button>
+    </form>
 </div>
+
 <%@include file="fragments/Footer.jsp"%>

@@ -3,6 +3,7 @@
          xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee
 		 http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd"
          version="3.1">
+
   <display-name>Archetype Created Web Application</display-name>
 
   <servlet>
@@ -16,7 +17,7 @@
 
   <servlet>
     <servlet-name>LoginServlet</servlet-name>
-    <servlet-class>ch.heigvd.amt.projet1.presentation.loginServlet</servlet-class>
+    <servlet-class>ch.heigvd.amt.projet1.presentation.LoginServlet</servlet-class>
   </servlet>
   <servlet-mapping>
     <servlet-name>LoginServlet</servlet-name>
@@ -40,4 +41,5 @@
     <servlet-name>ProfilServlet</servlet-name>
     <url-pattern>/profil</url-pattern>
   </servlet-mapping>
+
 </web-app>

@@ -1,3 +1,4 @@
+
 <%@include file="WEB-INF/views/fragments/Header.jsp"%>
 <style>
     .layout-middle{
@@ -36,3 +37,4 @@
 </div>
 
 <%@include file="WEB-INF/views/fragments/Footer.jsp"%>
+
