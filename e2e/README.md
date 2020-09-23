@@ -1,5 +1,8 @@
 # Partie E2E
 Ici, se trouvent les informations pour lancer les tests CodeceptJS.
+### Installation du server de test
+Pour installer un serveur de test suivre le tutoriel suivant:
+https://codecept.io/quickstart/
 ### Lancer un test
 Pour lancer un test il faut utiliser:
 ```
