@@ -1,3 +1,4 @@
+
 <%@include file="WEB-INF/views/fragments/Header.jsp"%>
 
 <!-- Page Content -->
@@ -15,3 +16,4 @@
 </div>
 
 <%@include file="WEB-INF/views/fragments/Footer.jsp"%>
+
