@@ -2,7 +2,14 @@
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
 <%@include file="fragments/Header.jsp"%>
 <c:set var ="pageTitle" value="login stackFlow"/>
-<div id="login">
+<style>
+    .ID{
+        max-width: 800px;
+        margin: auto;
+    }
+</style>
+
+<div id="login" class="ID">
     <c:if test="${errors!=null}">
         <ul>
             <c:forEach items="${errors}" var="error">

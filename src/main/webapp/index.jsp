@@ -1,12 +1,9 @@
 
 <%@include file="WEB-INF/views/fragments/Header.jsp"%>
 <style>
-    .layout-middle{
+    .content-middle{
         max-width: 800px;
         margin: auto;
-    }
-    .content-middle{
-        margin: 100px;
     }
 </style>
 

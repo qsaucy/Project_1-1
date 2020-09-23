@@ -2,7 +2,13 @@
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
 <%@include file="fragments/Header.jsp"%>
 <c:set var ="pageTitle" value="register stackFlow"/>
-<div id="register">
+<style>
+    .ID{
+        max-width: 800px;
+        margin: auto;
+    }
+</style>
+<div id="register" class="ID">
     <c:if test="${errors!=null}">
         <ul>
             <c:forEach items="${errors}" var="error">
@@ -19,7 +25,7 @@
         <label for="psw"><b>Password</b></label>
         <input type="password" placeholder="Enter Password" name="psw" required>
 
-        <button type="submit">Login</button>
+        <button type="submit">Register</button>
     </form>
 </div>
 <%@include file="fragments/Footer.jsp"%>
