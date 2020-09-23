@@ -6,7 +6,7 @@ https://codecept.io/quickstart/
 ### Lancer un test
 Pour lancer un test il faut utiliser:
 ```
-npx codeceptJS run <test_file name>
+npx codeceptjs run <test_file name>
 ```
 ### Tests disponibles
 * generation_test.js , un test de connection et un de navigation sur un forum pour personnes agés.
