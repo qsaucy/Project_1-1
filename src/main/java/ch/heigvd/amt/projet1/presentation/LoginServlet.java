@@ -1,6 +1,6 @@
-package ch.heigvd.amt.project1.presentation;
+package ch.heigvd.amt.projet1.presentation;
 
-import ch.heigvd.amt.project1.business.Checker;
+import ch.heigvd.amt.projet1.business.Checker;
 
 import javax.servlet.ServletConfig;
 import javax.servlet.ServletException;
@@ -17,14 +17,11 @@ public class LoginServlet extends javax.servlet.http.HttpServlet {
         business = new Checker();
     }
     protected  void doGet (javax.servlet.http.HttpServletRequest request, javax.servlet.http.HttpServletResponse response) throws javax.servlet.ServletException, IOException {
-            HttpSession session = request.getSession(true);
-            if(session.getAttribute("login")==null)
-                request.getRequestDispatcher("/WEB-INF/pages/login.jsp").forward(request, response);
-
-        else{
-
-            request.getRequestDispatcher("/index.jsp").forward(request, response);
-        }
+        HttpSession session = request.getSession();
+        if(session.getAttribute("login")==null)
+            request.getRequestDispatcher("/WEB-INF/views/login.jsp").forward(request, response);
+        else
+            response.sendRedirect("/Projet_1");
 
     }
     protected void doPost(javax.servlet.http.HttpServletRequest request, javax.servlet.http.HttpServletResponse response) throws javax.servlet.ServletException, IOException {
@@ -39,11 +36,12 @@ public class LoginServlet extends javax.servlet.http.HttpServlet {
             session.setAttribute("login",login);
             request.setAttribute("login", model);
             request.setAttribute("uname", request.getParameter("uname"));
-            request.getRequestDispatcher("/WEB-INF/pages/login.jsp").forward(request, response);
+            request.getRequestDispatcher("/WEB-INF/views/login.jsp").forward(request, response);
         }
         else {
-            request.setAttribute("login", session.getAttribute("login"));
-            request.getRequestDispatcher("/WEB-INF/pages/login.jsp").forward(request, response);
+            String target = (String)session.getAttribute("target");
+            target = (target!=null)?target:"/Projet_1/questions";
+            response.sendRedirect(target);
         }
     }
 }

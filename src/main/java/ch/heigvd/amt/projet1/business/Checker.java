@@ -1,5 +1,5 @@
-package ch.heigvd.amt.project1.business;
-import ch.heigvd.amt.project1.model.Authentification;
+package ch.heigvd.amt.projet1.business;
+import ch.heigvd.amt.projet1.model.Authentification;
 public class Checker{
     public String login(String login,String password){
         Authentification auth = new Authentification();

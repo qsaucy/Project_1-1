@@ -1,6 +1,6 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
-<%@include file="../fragment/header.jsp"%>
+<%@include file="fragments/Header.jsp"%>
 <c:set var ="pageTitle" value="login stackFlow"/>
 <div id="login">
     <c:if test="${errors!=null}">
@@ -23,4 +23,5 @@
     <button type="submit">Login</button>
     </form>
 </div>
-<%@include file="../fragment/footer.jsp"%>
+
+<%@include file="fragments/Footer.jsp"%>
