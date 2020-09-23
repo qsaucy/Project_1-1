@@ -1,12 +1,9 @@
 package ch.heigvd.amt.projet1.business;
 import ch.heigvd.amt.projet1.model.Authentification;
 public class Checker{
-    public String login(String login,String password){
+    public Boolean login(String login,String password){
         Authentification auth = new Authentification();
-        if(auth.isSame(login,password))
-            return "You are connected";
-        else
-            return "retry";
+        return auth.isSame(login,password);
     }
     public String register(String login,String password){
         Authentification auth = new Authentification();

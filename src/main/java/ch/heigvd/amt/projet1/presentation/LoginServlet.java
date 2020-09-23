@@ -32,16 +32,16 @@ public class LoginServlet extends javax.servlet.http.HttpServlet {
             session=request.getSession();
             String login = request.getParameter("uname");
             String password = request.getParameter("psw");
-            String model = business.login(login, password);
-            session.setAttribute("login",login);
-            request.setAttribute("login", model);
-            request.setAttribute("uname", request.getParameter("uname"));
+            boolean model = business.login(login, password);
+            if(model){
+                session.setAttribute("login",login);
+                request.setAttribute("login", model);
+                String target = (String)session.getAttribute("target");
+                target = (target!=null)?target:"/Projet_1/questions";
+                response.sendRedirect(target);
+                return;
+            }
             request.getRequestDispatcher("/WEB-INF/views/login.jsp").forward(request, response);
-        }
-        else {
-            String target = (String)session.getAttribute("target");
-            target = (target!=null)?target:"/Projet_1/questions";
-            response.sendRedirect(target);
         }
     }
 }
