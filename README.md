@@ -12,6 +12,6 @@ Toutes les pages -> systeme de recherche de tag ou autre ...
 
 # Lancer le serveur d'application
 
-1- Se mettre dans le dossier dockerizator,
-2- Lancer la commande bash build-image.sh
-3- En cas de modification du fichier .war le supprimer avant de construire l'image.
+- Se mettre dans le dossier dockerizator,
+- Lancer la commande bash build-image.sh
+- En cas de modification du fichier .war le supprimer avant de construire l'image.
