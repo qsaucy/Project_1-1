@@ -10,5 +10,4 @@ npx codeceptjs run <test_file name>
 ```
 ### Tests disponibles
 * generation_test.js , un test de connection et un de navigation sur un forum pour personnes agés.
-* nav_p1_test.js , un test de navigation pour le projet
-* log_p1_test.js , un test de connection pour le projet
+* Project1_week1_test.js , un test des fonctionnalitées de la première semaine.
