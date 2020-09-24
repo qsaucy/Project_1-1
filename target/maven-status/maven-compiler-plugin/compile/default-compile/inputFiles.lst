@@ -1,3 +1,8 @@
-/home/jerome/HEIG/Labo/AMT/Project_1/src/main/java/ch/heigvd/amt/projet1/model/Questions.java
-/home/jerome/HEIG/Labo/AMT/Project_1/src/main/java/ch/heigvd/amt/projet1/business/TestQuestion.java
-/home/jerome/HEIG/Labo/AMT/Project_1/src/main/java/ch/heigvd/amt/projet1/presentation/WelcomeServlet.java
+/home/rastignac/Bureau/HEIG-VD/AMT-Applications_multi-tiers/Projet1/Project_1/src/main/java/ch/heigvd/amt/projet1/presentation/QuestionsServlet.java
+/home/rastignac/Bureau/HEIG-VD/AMT-Applications_multi-tiers/Projet1/Project_1/src/main/java/ch/heigvd/amt/projet1/business/TestQuestion.java
+/home/rastignac/Bureau/HEIG-VD/AMT-Applications_multi-tiers/Projet1/Project_1/src/main/java/ch/heigvd/amt/projet1/presentation/RegisterServlet.java
+/home/rastignac/Bureau/HEIG-VD/AMT-Applications_multi-tiers/Projet1/Project_1/src/main/java/ch/heigvd/amt/projet1/business/AuthorisationFilter.java
+/home/rastignac/Bureau/HEIG-VD/AMT-Applications_multi-tiers/Projet1/Project_1/src/main/java/ch/heigvd/amt/projet1/presentation/LoginServlet.java
+/home/rastignac/Bureau/HEIG-VD/AMT-Applications_multi-tiers/Projet1/Project_1/src/main/java/ch/heigvd/amt/projet1/model/Authentification.java
+/home/rastignac/Bureau/HEIG-VD/AMT-Applications_multi-tiers/Projet1/Project_1/src/main/java/ch/heigvd/amt/projet1/business/Checker.java
+/home/rastignac/Bureau/HEIG-VD/AMT-Applications_multi-tiers/Projet1/Project_1/src/main/java/ch/heigvd/amt/projet1/presentation/ProfilServlet.java
